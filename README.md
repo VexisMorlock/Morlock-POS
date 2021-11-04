@@ -1,6 +1,36 @@
 # Morlock-POS
 POS system using rfid, raspberrypi, python, and mysql
 
+ Version 1.3 r2
+
+uploading working concept.  
+Change log:
+	Added better more coherent comments
+	*added real time clock (not included in code but added hardware)
+	Fixed issue with scaling on odd formatted tvs
+	Added home buttons to all windows excluding teacher mode
+		not going to add unless clients feel like its needed
+	
+
+Future software  changes:
+	Separate out files so less clutter
+	Get initial store information from database
+		I don't like that some of the info is hard-coded this needs to be fixed and moved to a more friendly way of changing the items in the store
+	Need to add a good way for the admin to add things into the store or take them away when they run out 
+	Improved UI
+		It still kinda looks like a 90 website and I want to improve the look.
+	add in the option for non standard fines and bonuses
+		some may find this feature useful when handling issues where kids are doing some that needs a fine/punishment where it is not an enumerated incident
+	Add feedback to bonus and fine windows when charging
+		can lead to confusion if I don't let the admin know that everything went ok.  
+Future hardware changes:
+	need to redo wiring
+		it looks super messy. I need to either design a hat to use or make my own cables.
+		clear plastic was not a great choice for box
+	maybe add a bigger lcd
+		it would give me more space to give customers more info at time of purchase
+	add rgb indicator led
+		always good to give more feedback
 
 Equipment:
   Raspberrypi 4 
