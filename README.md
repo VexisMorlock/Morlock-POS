@@ -62,7 +62,7 @@ uploading working concept.
 ## Migrate to PyQT6:
 - Change exec statements
 	* exec_()  ---> exec()
-		* you will need to do this for all exec statments, there is one for every window; all are commented should be easy to find
+		* You will need to do this for all exec statments, there is one for every window; all are commented and should be easy to find.
     
     
   
