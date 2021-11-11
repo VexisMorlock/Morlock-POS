@@ -1,6 +1,6 @@
 ![Morlock-POS](https://user-images.githubusercontent.com/50764330/141025891-1816fd68-6cb5-4aaf-9084-d06c5fc7e6b1.png)
 <br />
-[![self](https://img.shields.io/badge/Morlock--POS-v1.3r2-purple)](https://github.com/VexisMorlock/Morlock-Pass/)
+[![self](https://img.shields.io/badge/Morlock--POS-v1.3r3-purple)](https://github.com/VexisMorlock/Morlock-Pass/)
 [![Raspberrypi](https://img.shields.io/badge/Raspberrypi-4B-9cf)](https://www.raspberrypi.com/products/raspberry-pi-4-model-b/)
 [![Python](https://img.shields.io/badge/Python-3.73-9cf)](https://www.raspberrypi.com/products/raspberry-pi-4-model-b/)
 [![PyQt](https://img.shields.io/badge/PyQt-5%20or%206-purple)](https://www.raspberrypi.com/products/raspberry-pi-4-model-b/)
@@ -16,11 +16,12 @@ uploading working concept.
 - Fixed issue with scaling on odd formatted tvs
 * Added home buttons to all windows excluding teacher mode
 	* not going to add unless clients feel like it's needed
-	
 
 ## Future software  changes:
-- Separate out files so there's less clutter
-* Get initial store information from database
+* Creat methods for massive GUI windows.
+	* This wasn't done before because I didn't have time; school was starting.
+- Modulate files so there's less clutter
+* Get initial store/student information from database
 	*I don't like that some of the info is hard-coded, this needs to be fixed and moved to a more friendly way of changing the items in the store.
 	*Need to add a good way for the admin to add things into the store or take them away when they run out. 
 * Improved UI
