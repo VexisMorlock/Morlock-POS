@@ -140,7 +140,6 @@ class Ui_MainWindow(object):
         self.scanButton.clicked.connect(self.check_balance)
         self.retranslateUi(MainWindow)
         QtCore.QMetaObject.connectSlotsByName(MainWindow)
-        #self.check_balance()
         
 #teacher mode activatied / start teacher mode gui line        
     def teacher_mode(self):
@@ -152,6 +151,7 @@ class Ui_MainWindow(object):
         id, text = reader.read()
         self.label_bal_2.setText("")
         QtWidgets.qApp.processEvents()
+        #pull job of person connected to card scaned
         cursor.execute("select l.name, j.job_id, l.student_id from student_list l join current_jobs j on l.student_id = j.student_id where l.rfid_uid="+str(id))
         account_values = cursor.fetchone()
 #if card is not in database
@@ -166,7 +166,7 @@ class Ui_MainWindow(object):
             self.Admin_job_id = account_values[1]
             self.Admin_name = account_values[0]
             lcd.clear()
-#test if card belongs to admin
+#test if card belongs to admin admin is coded as -1 in database
             if self.Admin_job_id == -1:
                 lcd.clear()
         # Hide main window
@@ -232,7 +232,7 @@ class Ui_MainWindow(object):
                 lcd.clear()
                 lcd.message = "Please\nTry Again!!"
         
-#*find way to shrink / start up fine gui
+# start up fine window
     def Fines_window(self):
         self.Form_Fines = QDialog()
         self.Form_Fines.setObjectName("self.Form_Fines")
